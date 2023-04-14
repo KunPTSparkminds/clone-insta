@@ -1,0 +1,35 @@
+import * as React from "react";
+import { useThemeSwitcher } from "react-css-theme-switcher";
+
+interface IHomeIConProps {
+  isActive: boolean;
+}
+
+const HomeICon: React.FunctionComponent<IHomeIConProps> = ({ isActive }) => {
+  const { currentTheme } = useThemeSwitcher();
+  const isDarkMode = currentTheme === "dark";
+  return (
+    <span>
+      <svg
+        aria-label="Trang chủ"
+        className="_ab6-"
+        color={isDarkMode ? "rgb(255, 255, 255)" : "rgb(38, 38, 38)"}
+        fill={isDarkMode ? "rgb(255, 255, 255)" : "rgb(38, 38, 38)"}
+        height="24"
+        role="img"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z"
+          fill={isActive ? "" : "none"}
+          stroke="currentColor"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        ></path>
+      </svg>
+    </span>
+  );
+};
+
+export default HomeICon;

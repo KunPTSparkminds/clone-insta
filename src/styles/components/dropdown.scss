@@ -1,0 +1,50 @@
+.ant-dropdown {
+    &-placement-topRight {
+        .ant-dropdown-menu {
+            max-width: 80%;
+            padding: 0;
+
+            &-item {
+                border-bottom: 1px solid #ccc;
+                padding: 1.2rem !important;
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & > span:first-child {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+.dropdown-dark {
+    .ant-dropdown-menu {
+        background-color: rgb(38, 38, 38);
+        &-item {
+            border: none !important;
+            div {
+                & > span {
+                    color: #ffffff;
+                }
+            }
+            &:hover {
+                background-color: rgb(18, 18, 18) !important;
+            }
+        }
+    }
+}
+.dropdown-light {
+    .ant-dropdown-menu {
+        background-color: #ffffff;
+        &-item {
+            div {
+                & > span {
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

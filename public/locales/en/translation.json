@@ -1,0 +1,13 @@
+{
+  "sideBar": {
+    "home": "Home",
+    "search": "Search",
+    "explore": "Explore",
+    "notification": "Notification",
+    "showMore": "More",
+    "setting": "Setting",
+    "theme": "Theme",
+    "language": "Language",
+    "logOut": "Log Out"
+  }
+}
